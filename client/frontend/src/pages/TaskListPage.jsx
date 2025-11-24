@@ -22,7 +22,7 @@ export default function TaskListPage() {
     dispatch(fetchUsers());
   }, [dispatch]);
 
-  // For demo: assume current user is first user
+
   useEffect(() => {
     if (users.length > 0) {
       dispatch(setCurrentUserId(users[0]._id));
@@ -35,7 +35,7 @@ export default function TaskListPage() {
 
   return (
     <div className="flex flex-col gap-6">
-      {/* Filters */}
+     
       <div className="flex justify-between items-center">
         <div className="inline-flex rounded-md shadow-sm" role="group">
           {[
@@ -59,7 +59,7 @@ export default function TaskListPage() {
       </div>
 
      
-      {filter !== "completed" && <AddTaskForm />}
+      {filter == "all" && <AddTaskForm />}
 
 
       <div className="grid gap-3">
