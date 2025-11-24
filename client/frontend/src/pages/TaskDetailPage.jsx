@@ -44,7 +44,7 @@ export default function TaskDetailPage() {
  return (
   <div className="max-w-3xl mx-auto bg-white rounded-2xl shadow-lg p-6 md:p-8 space-y-6 border border-gray-100">
 
-    {/* Title + Delete Button */}
+    
     <div className="flex justify-between items-start">
       <div>
         <h1 className="text-2xl font-bold text-gray-900 tracking-tight">
@@ -63,10 +63,10 @@ export default function TaskDetailPage() {
       </button>
     </div>
 
-    {/* Info Grid */}
+   
     <div className="grid md:grid-cols-2 gap-6 text-sm text-gray-700">
 
-      {/* Left Column (Details) */}
+    
       <div className="space-y-2">
         <p>
           <span className="font-semibold">Assignee:</span>{" "}
@@ -90,7 +90,7 @@ export default function TaskDetailPage() {
         )}
       </div>
 
-      {/* Right Column (Status Dropdown) */}
+    
       <div>
         <label className="block text-sm font-semibold text-gray-700 mb-2">
           Status
@@ -108,7 +108,7 @@ export default function TaskDetailPage() {
       </div>
     </div>
 
-    {/* Status Badge */}
+ 
     <div>
       <span
         className={`inline-block px-3 py-1.5 rounded-full text-xs font-medium
